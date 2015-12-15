@@ -26,22 +26,27 @@ if (count($ideas)) {
             <ul class="card-content">
                 <div class="card-title">
                     <?= $idea->name ?>
+                    <?php
+                    if ($loggedUser) {
+                        ?>
+                        <form class="right" onsubmit="return confirm('Sûr de toi?');" action="./operations/idea.php" method="post">
+                            <input type="hidden" name="idea-id" value="<?= $idea->id ?>"/>
+                            <input type="hidden" name="delete" value="true"/>
+                            <button class="btn-floating btn-large blue" type="submit">
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </form>
 
-                    <form class="right" onsubmit="return confirm('Sûr de toi?');" action="./operations/idea.php" method="post">
-                        <input type="hidden" name="idea-id" value="<?= $idea->id ?>"/>
-                        <input type="hidden" name="delete" value="true"/>
-                        <button class="btn-floating btn-large blue" type="submit">
-                            <i class="material-icons">delete</i>
-                        </button>
-                    </form>
-
-                    <form class="right" action="./" method="get">
-                        <input type="hidden" name="update-idea" value="<?= $idea->id ?>"/>
-                        <input type="hidden" name="page" value="ideas-gestion"/>
-                        <button style="right:10px;" class="btn-floating btn-large blue " type="submit">
-                            <i class="material-icons">edit</i>
-                        </button>
-                    </form>
+                        <form class="right" action="./" method="get">
+                            <input type="hidden" name="update-idea" value="<?= $idea->id ?>"/>
+                            <input type="hidden" name="page" value="ideas-gestion"/>
+                            <button style="right:10px;" class="btn-floating btn-large blue " type="submit">
+                                <i class="material-icons">edit</i>
+                            </button>
+                        </form>
+                        <?php
+                    }
+                    ?>
                 </div>
 
                 <table class="white bordered striped highlight">

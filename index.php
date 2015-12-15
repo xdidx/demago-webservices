@@ -26,13 +26,14 @@ Database::visit($loggedUser);
     <body>
 
         <header class="grey center-align">
-            <!--<img height="200" src="./ressources/images/gta_demago.png" alt="Logo GTA Demago"/>-->
+            <img height="200" src="./ressources/images/gta_demago.png" alt="Logo GTA Demago"/>
         </header>
 
         <nav class="grey center-align">
             <ul style="display: inline-block;">
                 <li><a href="./?page=welcome">Accueil</a></li>
                 <li><a href="./?page=votes">Votes</a></li>
+                <li><a href="./?page=web">Services web</a></li>
                 <li><a href="./?page=launcher">Launcher</a></li>
                 <li><a href="./?page=mod">Mod</a></li>
             </ul>
