@@ -33,9 +33,11 @@ Database::visit($loggedUser);
             <ul style="display: inline-block;">
                 <li><a href="./?page=welcome">Accueil</a></li>
                 <li><a href="./?page=votes">Votes</a></li>
-                <li><a href="./?page=web">Services web</a></li>
                 <li><a href="./?page=launcher">Launcher</a></li>
                 <li><a href="./?page=mod">Mod</a></li>
+                <li><a href="./?page=web">Services web</a></li>
+                <li><a href="./?page=remote">Remote Gaming</a></li>
+                <li><a href="./?page=team">L'équipe</a></li>
             </ul>
         </nav>
 

@@ -2,29 +2,36 @@
 <div class="row">
     <div class="col s12">
         <div class="card-panel">
-            GTA Démago est une émission diffusée régulièrement sur internet sur Twitch (<a href="http://www.twitch.tv/realmyop2">http://www.twitch.tv/realmyop2</a>)
-        </div>
-    </div>
-    <div class="col s12">
-        <div class="card-panel">
-            Le mod GTA Démago peut être installé grâce aux launcher <a href="http://did.sytes.net/gtademago.rar">téléchargeable ici</a>.
-            (Une version du jeu GTA V est nécessaire pour faire fonctionner le mod)
+            GTA Démago est une émission diffusée régulièrement sur la chaine Twitch de RealMyop
+            <br/>
+            Ce denier réalise en direct les différentes missions créées par les spéctateurs en temps réél.
+            <br/>
+            Des votes sont organisés tout au long de chacune des émissions pour choisir parmis les différentes idées.
+            <br/>
+            Le mod GTA Démago peut être installé grâce au launcher (bientôt disponible sur ce site).
+            <div class="center-align">
+                <a href="http://www.twitch.tv/realmyop2">
+                    http://www.twitch.tv/realmyop
+                    <br/>
+                    <img height="100" alt="Trello" src="./ressources/images/twitch.png">
+                </a>
+            </div>
         </div>
     </div>
     <div class="col center-align s12 m6">
         <div class="card-panel">
-            Plusieurs platerformes de gestion des tâches sont disponibles pour chacun des projets lié à GTA Démago
+            Une platerforme de gestion des tâches est disponible pour chacun des projets lié à GTA Démago
             <br/>
             <a href="https://trello.com/gtademago">https://trello.com/gtademago</a>
             <br/>
-            <img style="max-width:300px;" alt="Trello" src="./ressources/images/trello.png">
+            <img height="100" alt="Trello" src="./ressources/images/trello.png">
         </div>
     </div>
     <div class="col center-align s12 m6">
         <div class="card-panel">
             Les différents projets sont hebergés sur GitHub.
             <br/>
-            <img style="max-width:300px;" alt="Github" src="./ressources/images/github.png">
+            <img height="100" alt="Github" src="./ressources/images/github.png">
         </div>
     </div>
 </div>

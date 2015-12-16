@@ -36,3 +36,7 @@ form {
 nav > div {
     float: left;
 }
+
+h3 {
+    text-align: center;
+}
