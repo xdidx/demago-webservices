@@ -40,3 +40,8 @@ nav > div {
 h3 {
     text-align: center;
 }
+
+.useful-files a span {
+    display: inline-block;
+    width: 200px;
+}

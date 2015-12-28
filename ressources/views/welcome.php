@@ -3,12 +3,13 @@
     <div class="col s12">
         <div class="card-panel">
             GTA Démago est une émission diffusée régulièrement sur la chaine Twitch de RealMyop
-            <br/>
-            Ce denier réalise en direct les différentes missions créées par les spéctateurs en temps réél.
+
+            Ce denier réalise les différentes missions créées par les spéctateurs en temps réél.
             <br/>
             Des votes sont organisés tout au long de chacune des émissions pour choisir parmis les différentes idées.
             <br/>
-            Le mod GTA Démago peut être installé grâce au launcher (bientôt disponible sur ce site).
+            Le mod GTA Démago peut être installé grâce au <a href="http://did.sytes.net/projets/gta-demago/ws/files/demago-launcher.rar">launcher à télécharger ici</a>
+
             <div class="center-align">
                 <a href="http://www.twitch.tv/realmyop2">
                     http://www.twitch.tv/realmyop
