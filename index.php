@@ -3,6 +3,8 @@ function __autoload($className) {
     include 'classes/'.$className . '.php';
 }
 
+$projectUrl = 'http://nesblog.com/gta-demago/';
+
 session_start();
 
 $loggedUser = null;
@@ -25,13 +27,14 @@ Database::visit($loggedUser);
 
     <body>
 
-        <header class="grey center-align">
+        <header class="center-align">
             <img height="200" src="./ressources/images/gta_demago.png" alt="Logo GTA Demago"/>
         </header>
 
-        <nav class="grey center-align">
+        <nav class="center-align">
             <ul style="display: inline-block;">
                 <li><a href="./?page=welcome">Accueil</a></li>
+                <li><a href="http://gtavdemago.forumactif.org/">Forum</a></li>
                 <li><a href="./?page=votes">Votes</a></li>
                 <li><a href="./?page=launcher">Launcher</a></li>
                 <li><a href="./?page=mod">Mod</a></li>

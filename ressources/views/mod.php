@@ -60,11 +60,11 @@
                     Les textures ne sont pas obligatoires pour faire fonctionner le mod.
                 </div>
                 <!--Use Webservices to have last version and links !-->
-                <a href="http://did.sytes.net/projets/gta-demago/ws/files/mod/0.2.zip"><span>Fichiers du mod</span>(1.14Mo, DLLs v0.2)</a>
+                <a href="<?= $projectUrl ?>ws/files/mod/0.2.zip"><span>Fichiers du mod</span>(1.14Mo, DLLs v0.2)</a>
                 <br/>
-                <a href="http://did.sytes.net/projets/gta-demago/ws/files/musics/musics.rar"><span>Musiques et bruitages</span>(90.3Mo, MAJ du 22/12/2015)</a>
+                <a href="<?= $projectUrl ?>ws/files/musics/music.zip"><span>Musiques et bruitages</span>(90.3Mo, MAJ du 22/12/2015)</a>
                 <br/>
-                <a href="http://did.sytes.net/projets/gta-demago/ws/files/textures/mods.rar"><span>Textures</span>(1.59Go, MAJ du 22/12/2015)</a>
+                <a href="<?= $projectUrl ?>ws/files/textures/mods.zip"><span>Textures</span>(1.59Go, MAJ du 22/12/2015)</a>
             </div>
         </div>
     </div>

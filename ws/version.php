@@ -14,9 +14,9 @@ if (isset($_POST['checksum'])) {
 
             if ($version > $response['maxVersion']) {
                 $response['maxVersion'] = $version;
-                $response['maxVersionDownloadLink'] = 'http://did.sytes.net/projets/gta-demago/ws/files/mod/'.$version.'.zip';
-                $response['texturesLink'] = 'http://did.sytes.net/projets/gta-demago/ws/files/textures/mods.zip';
-                $response['musicsLink'] = 'http://did.sytes.net/projets/gta-demago/ws/files/musics/music.zip';
+                $response['maxVersionDownloadLink'] = $projectUrl.'/ws/files/mod/'.$version.'.zip';
+                $response['texturesLink'] = $projectUrl.'ws/files/textures/mods.zip';
+                $response['musicsLink'] = $projectUrl.'ws/files/musics/music.zip';
             }
 
             if (md5_file($pathToVersions.$file) == $_POST['checksum']) {

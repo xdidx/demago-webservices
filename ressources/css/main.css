@@ -1,3 +1,9 @@
+html {
+    background-image: url("../images/gta-background.jpg");
+    background-size: 100% auto;
+    padding: 5px;
+}
+
 .popup {
     position: fixed;
     top: 50px;
@@ -29,8 +35,23 @@
     display: none;
 }
 
+header {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+body > main {
+    background: rgba(255, 255, 255, 0.9);
+}
+
 form {
     display: inline;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.9);
+}
+nav a {
+    color: black !important;
 }
 
 nav > div {

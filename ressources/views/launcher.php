@@ -18,7 +18,7 @@
     <div class="col s12">
         <div class="card-panel">
             <h5 class="center-align">
-                <a href="http://did.sytes.net/projets/gta-demago/ws/files/demago-launcher.rar">
+                <a href="<?= $projectUrl ?>ws/files/demago-launcher.rar">
                     Télécharger le launcher GTA Démago
                 </a>
             </h5>
