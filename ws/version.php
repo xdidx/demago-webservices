@@ -4,6 +4,8 @@ $response['version'] = "0";
 $response['maxVersion'] = "0";
 $response['maxVersionDownloadLink'] = "";
 
+$projectUrl = 'http://nesblog.com/gta-demago/';
+
 if (isset($_POST['checksum'])) {
 
     $pathToVersions = 'versions/';
