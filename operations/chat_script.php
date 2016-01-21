@@ -23,17 +23,13 @@ if ($server['connect']) {
     while (!feof($server['connect']) ) {
         $response = fgets($server['connect'], 128);
 
-        echo $response;
-
         $messageRequest = Database::getConnection()->prepare('INSERT INTO message(content, date) values(?,?)');
         $messageRequest->execute(array($response, time()));
 
         if (preg_match('/PING/', $response, $matches)) {
             SendData("PONG\n\r");
-            echo "PONG !";
-            SendData("PRIVMSG #xdidx :Je viens de faire un pong\n\r");
-
         }
+
         if (preg_match('/PRIVMSG #(.{1,20}) :(.+)/', $response, $matches)) {
             $username = $matches[1];
             $message = $matches[2];
@@ -52,11 +48,13 @@ if ($server['connect']) {
                         $vote->possibility = $possibility->id;
                         $vote->user = $username;
                         $vote->save();
+
+                        echo 'Vote '.$possibility->name.' ('.$possibility->id.') ajoute pour '.$username."\n";
                     } else {
-                        echo 'Idée non trouvée';
+                        echo "Idee non trouve\n";
                     }
                 } else {
-                    echo 'Possibilité inexistante : '.htmlspecialchars(trim($voteInformations[1]));
+                    echo 'Possibilite inexistante : '.htmlspecialchars(trim($voteInformations[1]))."\n";
                 }
             }
         }
