@@ -1,4 +1,4 @@
-<h3>Bievenue sur le site de GTA Démago</h3>
+<h3>Bienvenue sur le site de GTA Démago</h3>
 <div class="row">
     <div class="col s12">
         <div class="card-panel">

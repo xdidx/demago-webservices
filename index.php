@@ -35,7 +35,6 @@ Database::visit($loggedUser);
             <ul style="display: inline-block;">
                 <li><a href="./?page=welcome">Accueil</a></li>
                 <li><a href="http://gtavdemago.forumactif.org/">Forum</a></li>
-                <li><a href="./?page=votes">Votes</a></li>
                 <li><a href="./?page=launcher">Launcher</a></li>
                 <li><a href="./?page=mod">Mod</a></li>
                 <li><a href="./?page=web">Services web</a></li>
@@ -109,65 +108,6 @@ Database::visit($loggedUser);
             </div>
 
             <?php
-            if (!$loggedUser) {
-                ?>
-                <div class="connection-button waves-effect waves-light btn">Se connecter</div>
-                <div class="inscription-button waves-effect waves-light btn">S'inscrire</div>
-
-                <form id="connection-popup" class="popup card grey lighten-4" method="post" action="./operations/user.php">
-                    <div class="card-content">
-                        <div class="card-title grey-text text-darken-4">Connexion</div>
-                        <div class="input-field">
-                            <label>Pseudo : </label>
-                            <input type="text" name="username"/>
-                        </div>
-                        <div class="input-field">
-                            <label>Mot de passe : </label>
-                            <input type="password" name="password"/>
-                        </div>
-
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Connexion
-                            <i class="material-icons right">perm_identity</i>
-                        </button>
-                    </div>
-                </form>
-
-                <form id="inscription-popup" class="popup card grey lighten-4" method="post" action="./operations/user.php">
-                    <div class="card-content">
-                        <div class="card-title grey-text text-darken-4">Connexion</div>
-                        <div class="input-field">
-                            <label>Pseudo : </label>
-                            <input type="text" name="username"/>
-                        </div>
-                        <div class="input-field">
-                            <label>Mot de passe : </label>
-                            <input type="password" name="password"/>
-                        </div>
-                        <div class="input-field">
-                            <label>Confirmation mdp : </label>
-                            <input type="password" name="password_confirmation"/>
-                        </div>
-                        <button class="btn waves-effect waves-light" type="submit">
-                            S'inscrire
-                        </button>
-                    </div>
-                </form>
-                <?php
-            } else {
-                ?>
-                <div class="row">
-                    <form class="col m6 s12" action="./operations/user.php" method="post">
-                        <input type="hidden" name="disconnect" value="true"/>
-                        <button class="left btn-floating red waves-effect waves-light" type="submit">
-                            <i class="material-icons">power_settings_new</i>
-                        </button>
-                        <span style="position:relative;top:10px;left:5px;">
-                            <?= 'Bienvenue <b>'.$loggedUser->username.'</b>'; ?>
-                        </span>
-                    </form>
-                </div>
-                <?php
-            }
 
             if (isset($_GET['page']) && file_exists('ressources/views/'.$_GET['page'].'.php')) {
                 include 'ressources/views/'.$_GET['page'].'.php';
